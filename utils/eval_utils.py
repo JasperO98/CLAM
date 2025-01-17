@@ -33,7 +33,7 @@ def initiate_model(args, ckpt_path, device='cuda'):
 
     print_network(model)
 
-    ckpt = torch.load(ckpt_path)
+    ckpt = torch.load(ckpt_path, weights_only=False)
     ckpt_clean = {}
     for key in ckpt.keys():
         if 'instance_loss_fn' in key:
