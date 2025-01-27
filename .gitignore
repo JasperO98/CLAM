@@ -3,3 +3,7 @@ __pycache__/
 notebooks
 output
 weights
+data
+notes.txt
+results
+eval_results
