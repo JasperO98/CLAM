@@ -412,6 +412,7 @@ if __name__ == '__main__':
                                     overlap=patch_args.overlap, 
                                     top_left=top_left, bot_right = bot_right)
             if heatmap_args.save_ext == 'jpg':
+                print('Saving', os.path.join(p_slide_save_dir, heatmap_save_name))
                 heatmap.save(os.path.join(p_slide_save_dir, heatmap_save_name), quality=100)
             else:
                 heatmap.save(os.path.join(p_slide_save_dir, heatmap_save_name))
